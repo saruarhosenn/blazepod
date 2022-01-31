@@ -64,7 +64,7 @@ Responsive Breakpoint
 		max-width: 74.9rem;
 		position: absolute;
 		left: 9%;
-		bottom: 10rem;
+		/* bottom: 10rem; */
 	}
 
 	.hero-content p.hero-desc {
@@ -358,7 +358,7 @@ Responsive Breakpoint
 	===============================
 	*/
 	.kits-section {
-		padding-bottom: 10rem;
+		/* padding-bottom: 10rem; */
 	}
 
 	.kits-img {
