@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!---- Author Name ---->
+	<meta name="author" content="Your Name">
+	<!---- Website Description ---->
+	<meta name="description" content="Website Description">
+	<!---- Website keywords ---->
+	<meta name="keywords" content="Website keywords">
+	<!---- Website Title ---->
+	<title>Website Title</title>
+	<!------- Favicon ------->
+	<link rel="shortcut icon" type="image/x-icon" href="" />
+	<!-------- Fonts -------->
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	<!-------- Font Awesome -------->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!------- Css Here ------->
+	<link rel="stylesheet" href="assets/css/aos.css" />
+	<link rel="stylesheet" href="assets/css/slick.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/spacing.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+	<!-- 
+	  =====================================================
+	  Start Header Section 
+	  =====================================================
+	-->
+	<header>
+		<div class="header-top-text py-10">
+			<div class="container">
+				<div class="text-center">
+					<h4>Free Shipping for Orders Above $250</h4>
+				</div>
+			</div>
+		</div>
+		<nav class="transition-ease-in-out">
+			<div class="container d-flex justify-content-between align-items-center">
+				<!--======== Desctop Logo =========-->
+				<div class="logo d-none d-xxl-block">
+					<a href="index.html">
+						<img src="assets/images/header/logo-svg.svg" alt="logo" class="">
+					</a>
+				</div>
+
+				<!--========= Menu Btn =========-->
+				<div onclick="myFunction(this)" class="menu-toggle-btn d-block d-xxl-none">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+
+				<!--======== Mobail Logo =========-->
+				<div class="logo d-block d-xxl-none">
+					<a href="index.html">
+						<img src="assets/images/header/logo-svg.svg" alt="logo" class="">
+					</a>
+				</div>
+
+				<!--======== Cart =========-->
+				<div class="logo d-block d-xxl-none">
+					<a href="index.html">
+						<img src="assets/images/header/cart.svg" alt="logo" class="">
+					</a>
+				</div>
+
+				<!--========== Main Menu ==========-->
+				<div class="main-menu d-flex align-items-center justify-content-start flex-xxl-column">
+					<!-- Menu Close Icon & Logo -->
+					<div class="close-and-logo d-flex align-items-center d-block d-xxl-none">
+						<img src="assets/images/close.svg" class="menu-close-icon me-40" alt="close">
+						<img src="assets/images/header/logo-svg.svg" alt="logo" class="mobaile-logo">
+					</div>
+					<ul>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">blazepod experience</a>
+						</li>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">community</a>
+						</li>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">academy</a>
+						</li>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">store</a>
+						</li>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">about</a>
+						</li>
+						<li class="d-xxl-inline-block">
+							<a class="d-inline-block text-capitalize" href="#">support</a>
+						</li>
+						<li class="d-xxl-none">
+							<a class="d-inline-block text-capitalize openBtn" onclick="openSearch()" href="#">search</a>
+						</li>
+						<li class="d-xxl-none">
+							<a class="d-inline-block text-capitalize" href="#">log in</a>
+						</li>
+						<li class="d-lg-inline-block">
+							<a class="d-inline-block text-capitalize join-btn rounded-pill" href="#">Join</a>
+						</li>
+						<li class="d-none d-xxl-inline-block">
+							<a href="#" class="openBtn" onclick="openSearch()"><img
+									src="assets/images/header/search.svg" alt="search"></a>
+						</li>
+						<li class="d-none d-xxl-inline-block login">
+							<a href="#"><img src="assets/images/header/login.svg" alt="login"></a>
+						</li>
+						<li class="d-none d-xxl-inline-block cart">
+							<a href="#"><img src="assets/images/header/cart.svg" alt="logo" class=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Search Box -->
+				<div id="myOverlay" class="overlay transition-linear d-flex align-items-center justify-content-center">
+					<span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+						<img src="assets/images/close.svg" alt="close">
+					</span>
+					<div class="overlay-content">
+						<form action="#" class="form d-flex">
+							<input type="text" placeholder="Search..." name="search">
+							<button type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- 
+	  =====================================================
+	  End Header Section 
+	  =====================================================
+	-->
+
+
+	<main>
+		<!-- 
+		  =====================================================
+		  Start Hero Section 
+		  =====================================================
+		-->
+		<section class="hero-section">
+			<video data-play="false" data-id="1" class="bg-video video" autoplay playsinline muted loop>
+				<source src="assets/video/hero-video.mp4" type="video/mp4" />
+			</video>
+			<div class="hero-overlay">
+				<div class="container position-relative h-100">
+					<div class="hero-content">
+						<h1>A Quick as a Flash</h1>
+						<p class="hero-desc mt-25 mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+							et quam felis.</p>
+						<div class="hero-btn mb-30">
+							<a href="#" class="text-capitalize me-25">Learn More</a>
+							<a href="#" class="text-capitalize">buy now</a>
+						</div>
+						<p>Starting from $50 / month with afterpay4' </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Hero Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Logo Bar Section 
+		  =====================================================
+		-->
+		<section class="logo-bar-section py-80">
+			<div class="container">
+				<div class="row align-items-center g-0">
+					<div class="col-lg-2">
+						<div class="logo-bar-title text-center text-lg-start mb-5 mb-lg-0">
+							<p>As seen in</p>
+						</div>
+					</div>
+
+					<!-- Slider -->
+					<div class="col-lg-10">
+						<div class="logo-bar-slider">
+							<div class="logo-bar-slider-content text-center">
+								<img src="assets/images/logo-bar/medium.png" alt="medium" class="img-fluid">
+							</div>
+							<div class="logo-bar-slider-content text-center">
+								<img src="assets/images/logo-bar/forbes.png" alt="forbes" class="img-fluid">
+							</div>
+							<div class="logo-bar-slider-content text-center">
+								<img src="assets/images/logo-bar/entrepreneur.png" alt="entrepreneur" class="img-fluid">
+							</div>
+							<div class="logo-bar-slider-content text-center">
+								<img src="assets/images/logo-bar/techradar.png" alt="techradar" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Logo Bar Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Coach Section 
+		  =====================================================
+		-->
+		<section class="coach-section py-100">
+			<div class="container">
+				<div class="coach-title mx-auto mb-80">
+					<h2 class="section-title mb-35 text-center">Your personal assitant-coach.</h2>
+					<p class="text-center text-lg-start">Building on your existing customers and the marketing groundwork you've already invested in, we
+						create pathways to maximize the return on those relationships, while attracting the right new
+						clients. Building on your existing customers and the marketing groundwork you've already invested in, we
+						create.</p>
+				</div>
+
+				<!-- Slider -->
+				<div class="coach-slider mx-auto">
+					<article class="coach-content">
+						<div
+							class="coach-img mx-auto d-flex justify-content-center align-items-center transition-ease-in-out">
+							<img src="assets/images/coach/icon1.svg" alt="icon">
+						</div>
+						<div class="coach-text text-center mx-auto">
+							<p class="text-capitalize mt-30 mb-20">Experience</p>
+							<p>Tap into the future of sports performance. Create activities, share with friends and
+								inspire the world to be better and faster.</p>
+						</div>
+					</article>
+					<article class="coach-content">
+						<div
+							class="coach-img mx-auto d-flex justify-content-center align-items-center transition-ease-in-out">
+							<img src="assets/images/coach/icon2.svg" alt="icon">
+						</div>
+						<div class="coach-text text-center mx-auto">
+							<p class="text-capitalize mt-30 mb-20">Data</p>
+							<p>Tap into the future of sports performance. Create activities, share with friends and
+								inspire the world to be better and faster.</p>
+						</div>
+					</article>
+					<article class="coach-content">
+						<div
+							class="coach-img mx-auto d-flex justify-content-center align-items-center transition-ease-in-out">
+							<img src="assets/images/coach/icon3.svg" alt="icon">
+						</div>
+						<div class="coach-text text-center mx-auto">
+							<p class="text-capitalize mt-30 mb-20">Community</p>
+							<p>Tap into the future of sports performance. Create activities, share with friends and
+								inspire the world to be better and faster.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Coach Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Kits Section 
+		  =====================================================
+		-->
+		<section class="kits-section pt-55">
+			<div class="container">
+				<!----- Start row ----->
+				<div class="row align-items-center">
+					<article class="col-lg-7">
+						<div class="kits-img">
+							<img src="assets/images/kits/kits.png" alt="kits" class="w-100">
+						</div>
+					</article>
+					<article class="col-lg-5">
+						<div class="kits-content">
+							<h2 class="section-title text-capitalize mb-35">Blazepod Kits</h2>
+							<p>Each kit comes with a set of stackable Pods, a charging base and a portable BlazePod
+								case. Pick the number of Pods and choose from a variety of accessories and adaptors to
+								make the most out of every training - whether it's on the court, pitch, ice or sand.
+							<p>
+							<div class="kits-btn mt-70 mb-45">
+								<a href="#" class="btn-border d-flex justify-content-center align-items-center">
+									<span>
+										<span class="d-block"><span class="text-uppercase">NOW</span> <span
+												class="text-capitalize">With Membership</span></span>
+										<span class="d-block">530/Month</span>
+									</span>
+								</a>
+							</div>
+							<div class="text-center">
+								<a href="#" class="underline-link kits-link">Learn more about the membership</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!------ End row ------>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Kits Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Experience Section 
+		  =====================================================
+		-->
+		<section class="experience-section pt-100 pb-100">
+			<div class="container">
+				<div class="experience-container mx-auto">
+					<div class="experience-title text-center mb-100">
+						<h2 class="section-title text-capitalize">The Blazepod Experience </h2>
+					</div>
+					<!----- Start row ----->
+					<div class="row g-5 align-items-center">
+						<article class="col-lg-5 col-md-6 order-1 order-md-0">
+							<div class="posd-app-content">
+								<h2 class="section-title text-capitalize mb-35">Pods & App</h2>
+								<p>Hundreds of predefined activities and customization options to reach any performance
+									or rehab goal. Uniquely designed Pods to set up in countless settings and scenarios.
+								</p>
+								<ul class="posd-app-list my-45">
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/wifi.svg" alt="wifi">
+										<p>wireless</p>
+									</li>
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/splash.svg" alt="splash" class="ms-10">
+										<p>splash-proof</p>
+									</li>
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/battery.svg" alt="battery">
+										<p>10 hours of battery life</p>
+									</li>
+									<li class="d-flex align-items-center">
+										<img src="assets/images/experience/led.svg" alt="led" class="ms-05">
+										<p> LED lights, 8 bright color options</p>
+									</li>
+								</ul>
+								<div class="">
+									<a href="#" class="underline-link">See them in action</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-lg-7 col-md-6 order-0 order-md-1">
+							<div class="posd-app-img text-center text-md-end">
+								<img src="assets/images/experience/experience.png" alt="experience" class="w-100">
+							</div>
+						</article>
+					</div>
+					<!------ End row ------>
+
+					<!----- Start row ----->
+					<div class="row g-5 align-items-center mt-50">
+						<article class="col-lg-7 col-md-6">
+							<div class="frx-img">
+								<img src="assets/images/experience/man.png" alt="man" class="w-100">
+							</div>
+						</article>
+						<article class="col-lg-5 col-md-6">
+							<div class="frx-content">
+								<h2 class="section-title text-uppercase mb-35">FRX</h2>
+								<p>Our unique reaction training methodology combines cognitive and physical training
+									with a variety of light settings for vibrant, visual stimulation that motivate fast
+									reactions.</p>
+								<a href="#" class="underline-link">See it in action</a>
+							</div>
+						</article>
+					</div>
+					<!------ End row ------>
+
+					<!----- Start row ----->
+					<div class="row g-5 align-items-center mt-80">
+						<article class="col-lg-5 col-md-6 order-1 order-md-0">
+							<div class="data-content">
+								<h2 class="section-title text-capitalize mb-35">The Data</h2>
+								<p>Every tap is data.</p>
+								<p>Take your training to the lab, with detailed analytics that convert into practical
+									information. We track your results, you optimize your training. </p>
+								<ul class="data-list my-45">
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/watch.svg" alt="watch">
+										<p>stopwatch</p>
+									</li>
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/accurate.svg" alt="accurate">
+										<p>accurate</p>
+									</li>
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/analitics.svg" alt="analitics">
+										<p>analytics</p>
+									</li>
+									<li class="mb-15 d-flex align-items-center">
+										<img src="assets/images/experience/sharing.svg" alt="sharing">
+										<p>sharing</p>
+									</li>
+									<li class="d-flex align-items-center">
+										<img src="assets/images/experience/saving.svg" alt="saving">
+										<p>saving</p>
+									</li>
+								</ul>
+								<div class="">
+									<a href="#" class="underline-link">See them in action</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-lg-7 col-md-6 order-0 order-md-1">
+							<div class="data-img">
+								<img src="assets/images/experience/phone.png" alt="phone" class="w-100">
+							</div>
+						</article>
+					</div>
+					<!------ End row ------>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Experience Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Community Section 
+		  =====================================================
+		-->
+		<section class="community-section py-100">
+			<div class="container">
+				<div class="community-title mx-auto mb-100">
+					<div class="community-btn text-center">
+						<a href="#" class="community-btn-link rounded-pill text-capitalize px-85 py-20">join today</a>
+					</div>
+					<h2 class="section-title text-capitalize text-center mb-45">The Community</h2>
+					<p>Join the revolution. Become part of a community that engages and inspires one another. Create
+						activities, share your Journey with friends and make the world a better - and faster - place.
+					</p>
+				</div>
+				<!----- Start row ----->
+				<div class="row g-0">
+					<div class="col-lg-3 col-6">
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community1.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community5.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community9.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community2.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community6.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community10.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community13.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community3.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community7.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community11.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community4.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community8.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+						<div class="community-content position-relative">
+							<img src="assets/images/community/community12.jpg" alt="" class="w-100">
+							<div class="community-overlay-text transition-linear">
+								<div class="community-overlay-title">
+									<h3>"this is a title about Blazepod community"</h3>
+								</div>
+								<div class="community-overlay-desc">
+									<h4>Alma Williams</h4>
+									<p>personal tlalller & athletet</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!------ End row ------>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Community Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Field Section 
+		  =====================================================
+		-->
+		<section class="field-section py-100">
+			<div class="container-fluid px-0">
+				<div class="container">
+					<div class="field-title mx-auto text-center mb-100">
+						<h2 class="section-title">Maximize your performance in every field</h2>
+					</div>
+				</div>
+				<div class="field-slider">
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+					<div class="field-slider-content position-relative">
+						<img src="assets/images/fields/martial-arts.jpg" alt="field" class="w-100">
+						<div class="slider-overlay-content transition-linear">
+							<img src="assets/images/fields/football.png" alt="football">
+							<h3 class="text-capitalize mt-30">Soccer</h3>
+							<p>work on neural priming, spatial awareness and reactions to create smarter more reactive
+								players</p>
+							<a href="#" class="underline-link">Learn more about <br> Blazepod for Soccer</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Field Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Pros Section 
+		  =====================================================
+		-->
+		<section class="pros-section py-100">
+			<div class="container">
+				<div class="pros-title text-center mb-100">
+					<h2 class="section-title">Hear what the pros are saying</h2>
+				</div>
+				<!----- Start row ----->
+				<div class="row">
+					<article class="col-md-4 mb-5 mb-md-0">
+						<div class="pros-content pros-content-1">
+							<div class="pros-img position-relative">
+								<img src="assets/images/pros/pros-man1.png" alt="name here">
+								<img src="assets/images/pros/pros-circle1.png" alt="circle">
+							</div>
+							<div class="pros-info mx-auto text-center mt-60">
+								<p>work on neural priming, spatial awareness and reactions to create smarter more
+									reactive players</p>
+								<h4 class="text-capitalize mt-35 mb-05">Nelly Korda</h4>
+								<p class="text-capitalize">Olympic Gold Medalist</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-4 mb-5 mb-md-0">
+						<div class="pros-content pros-content-2">
+							<div class="pros-img position-relative">
+								<img src="assets/images/pros/pros-man2.png" alt="name here">
+								<img src="assets/images/pros/pros-circle2.png" alt="circle">
+							</div>
+							<div class="pros-info mx-auto text-center mt-60">
+								<p>work on neural priming, spatial awareness and reactions to create smarter more
+									reactive players</p>
+								<h4 class="text-capitalize mt-35 mb-05">Patrick Johnson</h4>
+								<p class="text-capitalize">Olympic Gold Medalist</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-4">
+						<div class="pros-content pros-content-3">
+							<div class="pros-img position-relative">
+								<img src="assets/images/pros/pros-man3.png" alt="name here">
+								<img src="assets/images/pros/pros-circle3.png" alt="circle">
+							</div>
+							<div class="pros-info mx-auto text-center mt-60">
+								<p>work on neural priming, spatial awareness and reactions to create smarter more
+									reactive players</p>
+								<h4 class="text-capitalize mt-35 mb-05">Shilla Milcovitc</h4>
+								<p class="text-capitalize">Olympic Gold Medalist</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!------ End row ------>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Pros Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Accessories Section 
+		  =====================================================
+		-->
+		<section class="accessories-section">
+			<div class="container">
+				<!----- Start row ----->
+				<div class="row align-items-center">
+					<article class="col-lg-7">
+						<div class="accessories-img">
+							<img src="assets/images/accessories/accessories.png" alt="kits" class="w-100 d-none d-lg-block">
+							<img src="assets/images/accessories/accessories2.png" alt="kits" class="w-100 d-block d-lg-none">
+						</div>
+					</article>
+					<article class="col-lg-5 mt-5 mt-lg-0">
+						<div class="accessories-content">
+							<h2 class="section-title text-capitalize mb-35">Our Accessories</h2>
+							<p>
+								Lorem impusum sit dolor hamet adipiscine velo valo lorem impusum sit dolor hamet
+								adipiscine velo valo lorem impusum sit dolor. Lorem impusum sit dolor hamet adipiscine
+								velo valo lorem impusum sit dolor hamet adipiscine velo.
+							<p>
+							<div class="accessories-btn mt-70 mb-45">
+								<a href="#"
+									class="btn-border text-capitalize d-flex justify-content-center align-items-center">
+									<span>Add Accessories To Your Kit</span>
+								</a>
+							</div>
+							<div class="text-center">
+								<a href="#" class="underline-link kits-link">Learn more about accessories</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!------ End row ------>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Accessories Section 
+		  =====================================================
+		-->
+
+
+		<!-- 
+		  =====================================================
+		  Start Reviews Section 
+		  =====================================================
+		-->
+		<section class="reviews-section py-100">
+			<div class="container-fluid px-0">
+				<div class="container">
+					<div class="reviews-title mx-auto mb-100">
+						<h2 class="section-title text-center mb-45">More than 20,000 <br> 5-star reviews</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla sed iure blanditiis
+							distinctio, possimus repellat tempora rem natus soluta, assumenda voluptate repellendus
+							accusamus ipsam.</p>
+					</div>
+				</div>
+				<div class="reviews-slider">
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+					<div class="reviews-slider-content py-55 px-35">
+						<ul class="ratting-list">
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+							<li class="d-inline-block"><img src="assets/images/reviews/star-fill.svg" alt="start"></li>
+						</ul>
+						<p class="my-30">"This app is amazing, better than a trainer and shows me exactly what to do.
+							Lorem impusum sit dolor hamet adipiscine velo valo This app is amazing, better than a
+							trainer and shows me exactly what to do. Lorem impusum sit dolor hamet adipiscine velo valo
+							This app is amazing, better than a trainer and shows me</p>
+						<p class="text-capitalize">- Natasha</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+		  =====================================================
+		  End Reviews Section 
+		  =====================================================
+		-->
+	</main>
+
+
+	<!-- 
+	  =====================================================
+	  Start Footer Section 
+	  =====================================================
+	-->
+	<footer>
+		<div class="container py-100">
+			<!----- Start row ----->
+			<div class="row">
+				<article class="col-xl-8 order-1 order-xl-0">
+					<div class="row gy-5 widget-area">
+						<article class="col-md-3 col-6">
+							<div class="widget-item">
+								<button class="d-flex align-itemns-center" id="widget-button-5"
+									aria-expanded="false">
+									<h3 class="widget-title text-capitalize">Learn</h3>
+								</button>
+								<div class="widget-content">
+									<ul class="widget-list">
+										<li><a href="#" class="text-capitalize">FRX</a></li>
+										<li><a href="#" class="text-capitalize">Membership</a></li>
+										<li><a href="#" class="text-capitalize">Blazepod Quiz</a></li>
+										<li><a href="#" class="text-capitalize">Blazepod Academy</a></li>
+										<li><a href="#" class="text-capitalize">Blazepod Community</a></li>
+										<li><a href="#" class="text-capitalize">Our Blog</a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-3 col-6">
+							<div class="widget-item">
+								<button class="d-flex align-itemns-center" id="widget-button-5"
+									aria-expanded="false">
+									<h3 class="widget-title text-capitalize">Blazepod Fields</h3>
+								</button>
+								<div class="widget-content">
+									<ul class="widget-list">
+										<li><a href="#" class="text-capitalize">Soccer</a></li>
+										<li><a href="#" class="text-capitalize">Football</a></li>
+										<li><a href="#" class="text-capitalize">Martial art</a></li>
+										<li><a href="#" class="text-capitalize">Fitness</a></li>
+										<li><a href="#" class="text-capitalize">Physiotherapy</a></li>
+										<li><a href="#" class="text-capitalize">Tennis</a></li>
+										<li><a href="#" class="text-capitalize">Baseball</a></li>
+										<li><a href="#" class="text-capitalize">Basketball</a></li>
+										<li><a href="#" class="text-capitalize">AP tests</a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-3 col-6">
+							<div class="widget-item">
+								<button class="d-flex align-itemns-center" id="widget-button-5"
+									aria-expanded="false">
+									<h3 class="widget-title text-capitalize">About</h3>
+								</button>
+								<div class="widget-content">
+									<ul class="widget-list">
+										<li><a href="#" class="text-capitalize">Blazepod Story</a></li>
+										<li><a href="#" class="text-capitalize">Our Vision</a></li>
+										<li><a href="#" class="text-capitalize">Team</a></li>
+										<li><a href="#" class="text-capitalize">Careers</a></li>
+										<li><a href="#" class="text-capitalize">Affiliates</a></li>
+										<li><a href="#" class="text-capitalize">Press</a></li>
+										<li><a href="#" class="text-capitalize">Affiliates</a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-3 col-6">
+							<div class="widget-item">
+								<button class="d-flex align-itemns-center" id="widget-button-5"
+									aria-expanded="false">
+									<h3 class="widget-title text-capitalize">Support</h3>
+								</button>
+								<div class="widget-content">
+									<ul class="widget-list">
+										<li><a href="#" class="text-capitalize">Contact Us</a></li>
+										<li><a href="#" class="text-capitalize"><span
+													class="text-upprercase">faq</span>s</a></li>
+										<li><a href="#" class="text-capitalize">Return Policy</a></li>
+										<li><a href="#" class="text-capitalize">Pods Warranty</a></li>
+										<li><a href="#" class="text-capitalize">Financing</a></li>
+										<li><a href="#" class="text-capitalize">Shipping</a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+				</article>
+				<article class="col-xl-4 order-0 order-xl-1 mb-5 mb-xl-0">
+					<div class="widget-2 mb-5 mb-xl-0">
+						<h3 class="widget-2-title mb-20">Let's get that inbox into fit</h3>
+						<form action="#" class="email-form w-100">
+							<div class="email-field d-flex lign-itemns-center">
+								<input type="email" name="" id="" placeholder="Your Email" class="rounded-pill me-15">
+								<button type="submit" class="text-capitalize rounded-pill">Join</button>
+							</div>
+						</form>
+						<p class="mt-25 mb-40">For more about how we use your information, see our Privacy Policy</p>
+						<div class="join-us mb-50">
+							<h3 class="widget-2-title mb-10">Join Us</h3>
+							<ul class="social-link">
+								<li class="d-inline-block me-15"><a href="#"><img
+											src="assets/images/footer/facebook.svg" alt="facebook"></a></li>
+								<li class="d-inline-block me-15"><a href="#"><img
+											src="assets/images/footer/instagram.svg" alt="instagram"></a></li>
+								<li class="d-inline-block me-15"><a href="#"><img src="assets/images/footer/twitter.svg"
+											alt="twitter"></a></li>
+								<li class="d-inline-block"><a href="#"><img src="assets/images/footer/youtube.svg"
+											alt="youtube"></a></li>
+							</ul>
+						</div>
+						<div class="download">
+							<h3 class="widget-2-title mb-20">Download the Blazepod App</h3>
+							<ul class="download-btn">
+								<li class="d-inline-block me-05"><a href="#"><img
+											src="assets/images/footer/app-store.png" alt="app store"></a></li>
+								<li class="d-inline-block"><a href="#"><img src="assets/images/footer/google-play.png"
+											alt="google play"></a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</div>
+			<!------ End row ------>
+		</div>
+		<div class="footer-bottom-widget py-50">
+			<div class="container">
+				<ul class="footer-bottom-widget-link d-flex justify-content-between align-items-center">
+					<li class=""><a href="#" class="text-capitalize">
+						<img src="assets/images/footer/location.svg" alt="location" class="me-50">
+						<span class="">United Status</span>
+					</a></li>
+					<li class=""><a href="#" class="text-capitalize">Privacy</a></li>
+					<li class=""><a href="#" class="text-capitalize">Term of Service</a></li>
+					<li class="d-inline-block"><a href="#" class="text-capitalize">Membership Terms</a></li>
+					<li class=""><a href="#" class="text-capitalize">IP Policy</a></li>
+					<li class=""><a href="#" class="text-capitalize">Your CA Privacy Rights</a></li>
+					<li class=""><a href="#" class="text-capitalize">Accessibility </a></li>
+					<li class="text-capitalize">&copy; Blazepod 2022. Design <span class="text-lowercase">by</span> <a
+							href="#" class="text-capitalize">DesignShop</a> code <span class="text-lowercase">by</span>
+						<a href="#" class="">labuzzco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- 
+	  =====================================================
+	  End Footer Section 
+	  =====================================================
+	-->
+
+
+
+	<!-- 
+	  ================================
+	  Back To Top Btn
+	  ================================
+	-->
+	<button type="button" id="scroll-up-btn" title="Go to top"
+		class="d-flex align-items-center justify-content-center rounded">
+		<img src="assets/images/arrow-up.svg" alt="arrow-up">
+	</button>
+	<!-- 
+	  ================================
+	  Back To Top Btn
+	  ================================
+	-->
+
+
+	<!--------- jS Here --------->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/parallaxie.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+
+		/* ===== SCROLL BACK TO TOP BTN ===== */
+		var mybutton = document.getElementById('scroll-up-btn');
+		window.onscroll = function () {
+			scrollFunction();
+		};
+
+		function scrollFunction() {
+			if (
+				document.body.scrollTop > 50 ||
+				document.documentElement.scrollTop > 50
+			) {
+				mybutton.style.opacity = '1';
+			} else {
+				mybutton.style.opacity = '0';
+			}
+		}
+		mybutton.addEventListener('click', topFunction);
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		/* ======== ACCORDION ======== */
+		const items = document.querySelectorAll(".widget-area button");
+		function toggleAccordion() {
+			const itemToggle = this.getAttribute('aria-expanded');
+
+			for (i = 0; i < items.length; i++) {
+				items[i].setAttribute('aria-expanded', 'false');
+			}
+
+			if (itemToggle == 'false') {
+				this.setAttribute('aria-expanded', 'true');
+			}
+		}
+		items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+		/* ======= OPEN & HIDE SEARCH BOX ====== */
+		function openSearch() {
+			document.getElementById("myOverlay").style.top = "0%";
+		}
+		function closeSearch() {
+			document.getElementById("myOverlay").style.top = "-100%";
+		}
+	</script>
+</body>
+
+</html>

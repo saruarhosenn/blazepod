@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'HurmeGeometricSans-700';
+    src: url('HurmeGeometricSans3-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans-300';
+    src: url('HurmeGeometricSans1-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans-400';
+    src: url('HurmeGeometricSans3-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

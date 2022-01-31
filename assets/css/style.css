@@ -1,0 +1,1205 @@
+/*
+--------------------------------------------
+--------------------------------------------
+  Theme Name: .
+  Author: .
+  Description: .
+  Version: 1.0.0
+--------------------------------------------
+--------------------------------------------
+*/
+
+
+/*
+-------------------------------------
+-------------------------------------
+CSS Index
+
+01.
+02.
+03.
+04.
+-------------------------------------
+-------------------------------------
+*/
+
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+:root {
+	--size-xl: 6rem;
+	--size-lg: 2.4rem;
+	--size-md: 1.8rem;
+	--size-sm: 1.6rem;
+	--primary-color: #231f20;
+	--secondary-color: #FFFFFF;
+	--ligh-blue: #5cc5e2;
+	--bg1: #132037;
+	--bg2: #5cc5e2;
+	--bg3: #079bd9;
+	--bg4: #FFFFFF;
+}
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'HurmeGeometricSans-400';
+	font-size: var(--size-md);
+	color: var(--primary-color);
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+/* 
+==================================
+Bacic Setup
+==================================
+*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-moz-selection {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+::selection {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+	width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--bg3);
+	height: 6rem;
+}
+
+section {
+	overflow-x: hidden !important;
+}
+
+a,
+span,
+label {
+	display: inline-block;
+}
+
+ul li {
+	list-style: none
+}
+
+a,
+a:focus {
+	text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+	outline: 0;
+	border: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	opacity: 1;
+	background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'HurmeGeometricSans-700';
+	color: var(--primary-color);
+}
+
+p,
+a {
+	font-family: 'HurmeGeometricSans-400';
+	font-size: var(--size-md);
+	color: var(--primary-color);
+	line-height: 1.2;
+}
+
+.transition-linear {
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+
+a,
+button,
+.transition-ease-in-out {
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* 
+================================================
+================================================
+Start Reuseble Components
+================================================
+*/
+.section-title {
+	font-size: var(--size-xl);
+	line-height: 1.2;
+}
+
+.btn-border,
+.underline-link {
+	font-size: var(--size-md);
+}
+
+.btn-border {
+	max-width: 54.4rem;
+	min-height: 11.3rem;
+	color: var(--secondary-color);
+	text-align: center;
+	text-transform: capitalize;
+	border: .2rem solid var(--secondary-color);
+	border-radius: 6rem;
+	-webkit-border-radius: 6rem;
+	-moz-border-radius: 6rem;
+	-ms-border-radius: 6rem;
+	-o-border-radius: 6rem;
+}
+
+.btn-border:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.underline-link {
+	position: relative;
+	color: var(--primary-color);
+}
+
+.underline-link:hover {
+	color: var(--primary-color);
+}
+
+.underline-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .2rem;
+	background-color: var(--primary-color);
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.underline-link:hover::after {
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+}
+
+/* 
+================================================
+End Reuseble Components
+================================================
+================================================
+*/
+
+
+/* 
+=========================================
+Start Header Section
+=========================================
+*/
+header,
+nav.sticky-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+header .header-top-text {
+	background-color: var(--bg4);
+}
+
+header .header-top-text h4 {
+	font-size: var(--size-md);
+}
+
+header nav {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+
+nav .logo img {
+	max-width: 15rem;
+}
+
+nav .main-menu ul li:not(:last-child) {
+	margin-right: 5rem;
+}
+
+nav .main-menu ul li a {
+	letter-spacing: .1rem;
+	color: var(--secondary-color);
+	font-size: var(--size-md);
+}
+
+nav .main-menu ul li a.join-btn {
+	background-color: #F16061;
+	padding: 1.5rem 4.5rem;
+}
+
+nav .main-menu ul li a img {
+	width: 2.1rem;
+}
+
+nav .main-menu ul li.login a img {
+	width: 2rem;
+}
+
+nav .main-menu ul li.cart a img {
+	width: 1.8rem;
+}
+
+/*
+--------------------
+Hamburger Menu Btn
+--------------------
+*/
+.menu-toggle-btn {
+	position: relative;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.menu-toggle-btn .bar {
+	width: 3.5rem;
+	height: .3rem;
+	background: var(--secondary-color);
+	margin: .6rem 0;
+}
+
+/*
+----------------
+Sticky Menu
+----------------
+*/
+nav.sticky-menu {
+	background-color: var(--bg4);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+nav.sticky-menu .logo a img,
+nav.sticky-menu .main-menu ul li a img {
+	filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
+	-webkit-filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
+}
+
+nav.sticky-menu .main-menu ul li:not(:last-child) a {
+	color: var(--primary-color);
+}
+
+nav.sticky-menu .main-menu ul li a.join-btn {
+	color: var(--secondary-color);
+}
+
+/* 
+----------------
+Search Box
+----------------
+*/
+.overlay {
+	padding: 0 1rem;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	top: -100%;
+	left: 0;
+	background-color: rgba(19, 32, 55, 0.92);
+}
+
+.overlay-content {
+	width: 100%;
+	max-width: 60rem;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.overlay .form :is(input, input::placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.overlay .form input[type=text] {
+	padding: 1.5rem;
+	height: 6rem;
+	width: 80%;
+	background: var(--bg4);
+	border-radius: 5rem 0 0 5rem;
+	-webkit-border-radius: 5rem 0 0 5rem;
+	-moz-border-radius: 5rem 0 0 5rem;
+	-ms-border-radius: 5rem 0 0 5rem;
+	-o-border-radius: 5rem 0 0 5rem;
+}
+
+.overlay .form button {
+	width: 20%;
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	background: #F16061;
+	font-size: var(--size-md);
+	color: var(--secondary-color);
+	border-radius: 0 5rem 5rem 0;
+	-webkit-border-radius: 0 5rem 5rem 0;
+	-moz-border-radius: 0 5rem 5rem 0;
+	-ms-border-radius: 0 5rem 5rem 0;
+	-o-border-radius: 0 5rem 5rem 0;
+}
+
+.overlay .closebtn img {
+	width: 2.5rem;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+	-webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+
+/* 
+=========================================
+End Header Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Hero Section
+=========================================
+*/
+.hero-section {
+	min-height: 100vh;
+	position: relative;
+}
+
+.hero-section video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #000, var(--bg2));
+	background-blend-mode: overlay;
+	opacity: .7;
+}
+
+.hero-content {
+	max-width: 74.9rem;
+	position: absolute;
+	left: 9%;
+	bottom: 18%;
+}
+
+.hero-content h1 {
+	font-size: 8rem;
+	line-height: 1.2;
+	color: var(--ligh-blue);
+}
+
+.hero-content p {
+	color: var(--secondary-color);
+}
+
+.hero-content p.hero-desc {
+	font-size: 3.4rem;
+}
+
+.hero-content .hero-btn a {
+	border: .2rem solid var(--secondary-color);
+	padding: 2rem 4rem;
+	border-radius: 3rem;
+	-webkit-border-radius: 4rem;
+	-moz-border-radius: 4rem;
+	-ms-border-radius: 4rem;
+	-o-border-radius: 4rem;
+}
+
+.hero-content .hero-btn a:first-child {
+	color: var(--secondary-color);
+}
+
+.hero-content .hero-btn a:first-child:hover {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+.hero-content .hero-btn a:last-child {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+.hero-content .hero-btn a:last-child:hover {
+	color: var(--secondary-color);
+	background-color: transparent;
+}
+
+
+/* 
+=========================================
+End Hero Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Logo Bar Section
+=========================================
+*/
+.logo-bar-slider-content {
+	margin: 0 60px;
+}
+
+/* 
+=========================================
+End Logo Bar Section
+=========================================
+*/
+
+
+/* 
+=========================================
+End Coach Section
+=========================================
+*/
+.coach-section {
+	background-color: #e9edf5;
+}
+
+.coach-title {
+	max-width: 88.5rem;
+}
+
+.coach-slider {
+	width: 100%;
+	max-width: 139.4rem;
+}
+
+.coach-content:first-child {
+	margin-top: 4rem;
+}
+
+.coach-content:nth-child(2) {
+	margin-top: 20rem;
+}
+
+.coach-content .coach-img {
+	width: 23rem;
+	height: 23rem;
+	background-color: var(--bg4);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.coach-content .coach-img:hover {
+	background-color: var(--bg2);
+}
+
+/* .coach-content .coach-img:hover .coach-img img {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+	-webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+} */
+
+.coach-content:last-child .coach-img img {
+	filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
+	-webkit-filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
+}
+
+.coach-content .coach-text {
+	max-width: 34rem;
+}
+
+.coach-content .coach-text p:first-child {
+	font-size: 2.2rem;
+}
+
+.coach-content .coach-text p:last-child {
+	display: none;
+}
+
+.coach-content:hover .coach-text p:last-child {
+	display: block;
+}
+
+/* 
+=========================================
+Start Coach Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Kits Section
+=========================================
+*/
+.kits-section {
+	background: url(../images/kits/kits-banner.jpg) no-repeat bottom / cover;
+	min-height: 100vh;
+}
+
+.kits-content {
+	max-width: 56.4rem;
+}
+
+.kits-content h2 {
+	color: var(--ligh-blue) !important;
+}
+
+.kits-img {
+	margin-left: -11.6rem;
+}
+
+.kits-content :is(h2, p, .kits-link) {
+	color: var(--secondary-color);
+}
+
+.kits-content .kits-link::after {
+	background-color: var(--secondary-color);
+}
+
+/* 
+=========================================
+End Kits Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Experience Section
+=========================================
+*/
+.experience-section {
+	background: url(../images/experience/experience-banner.png) no-repeat bottom / cover;
+	min-height: 100vh;
+}
+
+.experience-container {
+	max-width: 166.2rem;
+}
+
+/* 
+--------------------
+Posd App Style 
+--------------------
+*/
+.posd-app-content {
+	max-width: 59.3rem;
+	padding-right: 17.8rem;
+}
+
+.posd-app-list li:nth-child(1) p {
+	margin-left: 1.7rem;
+}
+
+.posd-app-list li:nth-child(2) p {
+	margin-left: 2.3rem;
+}
+
+.posd-app-list li:nth-child(3) p {
+	margin-left: 2rem;
+}
+
+.posd-app-list li:nth-child(4) p {
+	margin-left: 2.2rem;
+}
+
+/* 
+--------------------
+FRX Style 
+--------------------
+*/
+.frx-img {
+	margin-left: -17rem;
+}
+
+.frx-content {
+	padding-left: 28.6rem;
+}
+
+.frx-content p {
+	margin-bottom: 16.5rem;
+}
+
+/* 
+--------------------
+Data Style 
+--------------------
+*/
+.data-content {
+	padding-right: 25rem;
+}
+
+.data-list li p {
+	margin-left: 1.7rem;
+}
+
+.data-list li:nth-child(4) p {
+	margin-left: 2.1rem;
+}
+
+.data-list li:nth-child(5) p {
+	margin-left: 2.2rem;
+}
+
+.data-img {
+	margin-right: -130px;
+}
+
+/* 
+=========================================
+End Experience Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Community Section
+=========================================
+*/
+.community-title {
+	max-width: 80.6rem;
+}
+
+.community-btn {
+	margin-bottom: 12.5rem;
+}
+
+.community-btn-link,
+.community-btn-link:hover {
+	background-color: #FF605F;
+	color: var(--secondary-color);
+}
+
+.community-content {
+	overflow: hidden;
+}
+
+.community-overlay-text {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	position: absolute;
+	left: 0;
+	bottom: -19rem;
+	opacity: 0;
+	visibility: hidden;
+	background-color: var(--secondary-color);
+}
+
+.community-content:hover .community-overlay-text {
+	bottom: 0px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.community-overlay-title,
+.community-overlay-desc {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	padding: 3.5rem;
+}
+
+.community-overlay-title {
+	top: 0;
+}
+
+.community-overlay-desc {
+	bottom: 0;
+}
+
+.community-overlay-title h3 {
+	font-size: var(--size-lg);
+}
+
+.community-overlay-desc h4 {
+	font-size: var(--size-md);
+}
+
+/* 
+=========================================
+End Community Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Field Section
+=========================================
+*/
+.field-title {
+	max-width: 80rem;
+}
+
+.field-slider .field-slider-content {
+	margin: 0 1.3rem;
+	overflow: hidden;
+}
+
+.slider-overlay-content {
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondary-color);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 2rem;
+	opacity: 0;
+	visibility: visible;
+}
+
+.field-slider-content:hover .slider-overlay-content {
+	opacity: 0;
+	visibility: visible;
+}
+
+.slider-overlay-content img {
+	max-width: 8.5rem;
+}
+
+.slider-overlay-content h3 {
+	font-size: var(--size-lg);
+}
+
+.slider-overlay-content p {
+	margin: 6rem 0 11rem;
+}
+
+.slider-overlay-content a {
+	text-decoration: underline;
+}
+
+.slider-overlay-content a::after {
+	background-color: transparent;
+}
+
+/* 
+=========================================
+End Field Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Pros Section
+=========================================
+*/
+.pros-section {
+	background: url(../images/pros/pros-banner.png) no-repeat top / cover;
+	min-height: 100vh;
+}
+
+.pros-content-1 {
+	margin-top: 31.5rem;
+}
+
+.pros-content-3 {
+	margin-top: 11.1rem;
+}
+
+.pros-content .pros-img,
+.pros-content .pros-img img:nth-child(1),
+.pros-content .pros-img img:nth-child(1) {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.pros-content .pros-img,
+.pros-content .pros-img img:nth-child(1) {
+	width: 47.8rem;
+	height: 47.8rem;
+	margin: auto;
+	display: block;
+}
+
+.pros-content .pros-img img:nth-child(2) {
+	width: 23rem;
+	height: 23rem;
+	position: absolute;
+}
+
+.pros-content-1 .pros-img img:nth-child(2),
+.pros-content-3 .pros-img img:nth-child(2) {
+	left: -17%;
+	bottom: 0;
+}
+
+.pros-content-2 .pros-img {
+	z-index: 1;
+}
+
+.pros-content-2 .pros-img img:nth-child(2) {
+	top: 0;
+	left: -20%;
+	z-index: -1;
+}
+
+.pros-content .pros-info {
+	max-width: 41.2rem;
+}
+
+.pros-content .pros-info h4 {
+	font-size: var(--size-md);
+}
+
+/* 
+=========================================
+End Pros Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Accessories Section
+=========================================
+*/
+.accessories-section {
+	background: url(../images/accessories/accessories-banner.jpg) no-repeat bottom / cover;
+	/* min-height: 100vh; */
+}
+
+.accessories-content {
+	max-width: 56.4rem;
+}
+
+.accessories-content h2 {
+	color: var(--ligh-blue) !important;
+}
+
+.accessories-img {
+	margin-left: -13rem;
+}
+
+.accessories-content :is(h2, p, .kits-link) {
+	color: var(--secondary-color);
+}
+
+.accessories-content .kits-link::after {
+	background-color: var(--secondary-color);
+}
+
+/* 
+=========================================
+End Accessories Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Reviews Section
+=========================================
+*/
+.reviews-section {
+	background-color: var(--bg1);
+}
+
+.reviews-title {
+	max-width: 83.5rem;
+}
+
+.reviews-title h2 {
+	color: var(--ligh-blue);
+}
+
+.reviews-title p {
+	color: var(--secondary-color);
+}
+
+.reviews-slider-content {
+	background-color: var(--bg4);
+	margin: 0 1.5rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+
+.reviews-slider-content .ratting-list li img {
+	width: 2rem;
+}
+
+.reviews-slider-content p:last-child {
+	font-size: var(--size-md);
+}
+
+/* 
+=========================================
+End Reviews Section
+=========================================
+*/
+
+
+/* 
+=========================================
+Start Footer Section
+=========================================
+*/
+footer {
+	background-color: var(--bg4);
+}
+
+.widget-area button {
+	position: relative;
+	width: 100%;
+	background: none;
+	cursor: pointer;
+}
+
+.widget-area button .widget-title {
+	font-size: var(--size-md);
+	text-align: left;
+	position: relative;
+}
+
+.widget-area button .widget-title::after {
+	content: "+";
+	position: absolute;
+	right: -15px;
+}
+
+.widget-area button[aria-expanded=true]+.widget-content {
+	opacity: 1;
+	max-height: 20rem;
+	-webkit-transition: all 400ms linear;
+	-o-transition: all 400ms linear;
+	transition: all 400ms linear;
+	will-change: opacity, max-height;
+}
+
+.widget-area .widget-content {
+	max-height: auto;
+	overflow: hidden;
+	-webkit-transition: opacity 400ms linear, max-height 400ms linear;
+	-o-transition: opacity 400ms linear, max-height 400ms linear;
+	transition: opacity 400ms linear, max-height 400ms linear;
+	will-change: opacity, max-height;
+}
+
+.widget-content .widget-list {
+	margin-top: 1.2rem;
+}
+
+.widget-content .widget-list li:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.widget-content .widget-list li a:hover {
+	color: var(--primary-color);
+}
+
+.widget-2-title {
+	font-size: var(--size-md);
+}
+
+.email-field :is(input, input::placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.email-field input {
+	width: 70%;
+	height: 8rem;
+	padding: 2rem;
+	background: var(--bg4);
+	border: .2rem solid var(--primary-color);
+}
+
+.email-field button {
+	width: 30%;
+	height: 8rem;
+	line-height: 8rem;
+	text-align: center;
+	background: var(--primary-color);
+	font-size: var(--size-md);
+	color: var(--secondary-color);
+}
+
+.social-link li img {
+	width: 3rem;
+}
+
+.footer-bottom-widget {
+	background-color: #F0F4F8;
+}
+
+.widget-list li a,
+.footer-bottom-widget-link li a {
+	font-size: var(--size-sm);
+}
+
+/* 
+=========================================
+End Footer Section
+=========================================
+*/
+
+
+/* 
+===============================
+Back to top Btn
+===============================
+*/
+#scroll-up-btn {
+	opacity: 0;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	z-index: 99999;
+	background: var(--bg3);
+	width: 4.5rem;
+	height: 4.5rem;
+	-webkit-animation: myBtn 3.5s infinite linear;
+	animation: myBtn 3.5s infinite linear
+}
+
+@-webkit-keyframes myBtn {
+	0% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	25% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	50% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	75% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	100% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+}
+
+@keyframes myBtn {
+	0% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	25% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	50% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+
+	75% {
+		bottom: 2rem;
+		right: 3rem;
+	}
+
+	100% {
+		right: 3rem;
+		bottom: 4rem;
+	}
+}
