@@ -64,7 +64,7 @@ Responsive Breakpoint
 		max-width: 74.9rem;
 		position: absolute;
 		left: 9%;
-		bottom: 15%;
+		bottom: 10rem;
 	}
 
 	.hero-content p.hero-desc {
@@ -345,6 +345,15 @@ Responsive Breakpoint
 
 	/* 
 	===============================
+	Hero Section Responsive
+	===============================
+	*/
+	.hero-content {
+		bottom: 10rem;
+	}
+
+	/* 
+	===============================
 	Kits Section Responsive
 	===============================
 	*/
@@ -437,6 +446,10 @@ Responsive Breakpoint
 	Hero Section Responsive
 	===============================
 	*/
+	.hero-content {
+		bottom: 8rem;
+	}
+
 	.hero-content h1 {
 		font-size: 5rem;
 	}
@@ -545,6 +558,10 @@ Responsive Breakpoint
 	Hero Section Responsive
 	===============================
 	*/
+	.hero-content {
+		bottom: 6rem;
+	}
+	
 	.hero-content h1 {
 		font-size: 4.5rem;
 	}
@@ -585,9 +602,6 @@ Responsive Breakpoint
 		padding: 3.5rem 2rem;
 	}
 
-	.hero-content {
-		bottom: 0%;
-	}
 }
 
 @media (max-width: 511px) {
@@ -676,7 +690,7 @@ Responsive Breakpoint
 	.hero-content {
 		padding: 0 1rem;
 		left: 0%;
-		bottom: 10%;
+		bottom: 5rem;
 	}
 	
 	.hero-content h1 {
