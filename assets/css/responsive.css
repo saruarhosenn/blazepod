@@ -585,6 +585,9 @@ Responsive Breakpoint
 		padding: 3.5rem 2rem;
 	}
 
+	.hero-content {
+		bottom: 0%;
+	}
 }
 
 @media (max-width: 511px) {
