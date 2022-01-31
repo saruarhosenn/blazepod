@@ -1,3 +1,4 @@
+
 /*
 --------------------------------------------
 --------------------------------------------
@@ -345,7 +346,8 @@ nav.sticky-menu {
 	background-color: var(--bg4);
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 nav.sticky-menu .logo a img,
@@ -392,6 +394,26 @@ Search Box
 	color: #ffffff;
 }
 
+.overlay .form :is(input, input::-webkit-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.overlay .form :is(input, input::-moz-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.overlay .form :is(input, input:-ms-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.overlay .form :is(input, input::-ms-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
 .overlay .form :is(input, input::placeholder) {
 	font-size: var(--size-md);
 	color: var(--primary-color);
@@ -400,7 +422,7 @@ Search Box
 .overlay .form input[type=text] {
 	padding: 1.5rem;
 	height: 6rem;
-	width: 80%;
+	width: 70%;
 	background: var(--bg4);
 	border-radius: 5rem 0 0 5rem;
 	-webkit-border-radius: 5rem 0 0 5rem;
@@ -410,7 +432,7 @@ Search Box
 }
 
 .overlay .form button {
-	width: 20%;
+	width: 30%;
 	height: 6rem;
 	line-height: 6rem;
 	text-align: center;
@@ -454,7 +476,8 @@ Start Hero Section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .hero-overlay {
@@ -463,6 +486,8 @@ Start Hero Section
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(var(--bg2)));
+	background: -o-linear-gradient(top, #000, var(--bg2));
 	background: linear-gradient(to bottom, #000, var(--bg2));
 	background-blend-mode: overlay;
 	opacity: .7;
@@ -537,9 +562,8 @@ Start Logo Bar Section
 =========================================
 */
 .logo-bar-slider-content {
-	margin: 0 60px;
+	margin: 0 40px;
 }
-
 /* 
 =========================================
 End Logo Bar Section
@@ -588,14 +612,14 @@ End Coach Section
 	background-color: var(--bg2);
 }
 
-/* .coach-content .coach-img:hover .coach-img img {
-	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-	-webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-} */
-
 .coach-content:last-child .coach-img img {
 	filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
 	-webkit-filter: invert(8%) sepia(7%) saturate(777%) hue-rotate(294deg) brightness(10%) contrast(90%);
+}
+
+.coach-content .coach-img:hover  img {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+	-webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 .coach-content .coach-text {
@@ -841,11 +865,11 @@ Start Field Section
 	bottom: 0;
 	padding: 2rem;
 	opacity: 0;
-	visibility: visible;
+	visibility: hidden;
 }
 
 .field-slider-content:hover .slider-overlay-content {
-	opacity: 0;
+	opacity: 1;
 	visibility: visible;
 }
 
@@ -1094,6 +1118,26 @@ footer {
 	font-size: var(--size-md);
 }
 
+.email-field :is(input, input::-webkit-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.email-field :is(input, input::-moz-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.email-field :is(input, input:-ms-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
+.email-field :is(input, input::-ms-input-placeholder) {
+	font-size: var(--size-md);
+	color: var(--primary-color);
+}
+
 .email-field :is(input, input::placeholder) {
 	font-size: var(--size-md);
 	color: var(--primary-color);
@@ -1128,6 +1172,10 @@ footer {
 .widget-list li a,
 .footer-bottom-widget-link li a {
 	font-size: var(--size-sm);
+}
+
+.underline-text {
+	text-decoration: underline;
 }
 
 /* 

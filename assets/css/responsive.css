@@ -1,3 +1,4 @@
+
 /*
 =========================================
 Responsive Breakpoint
@@ -86,6 +87,15 @@ Responsive Breakpoint
 
 	/* 
 	===============================
+	Accessories Section Responsive
+	===============================
+	*/
+	.accessories-img {
+		margin-left: -15rem;
+	}
+
+	/* 
+	===============================
 	Footer Section Responsive
 	===============================
 	*/
@@ -101,6 +111,18 @@ Responsive Breakpoint
 	.download-btn li img {
 		width: 16rem;
 		height: 5rem;
+	}
+
+	.footer-bottom-widget {
+		padding: 3rem 0;
+	}
+
+	.footer-bottom-widget-link li:not(:first-child) {
+		display: none;
+	}
+
+	.footer-bottom-widget-link li:first-child img {
+		margin-right: 1rem;
 	}
 }
 
@@ -225,6 +247,15 @@ Responsive Breakpoint
 
 	/* 
 	===============================
+	Accessories Section Responsive
+	===============================
+	*/
+	.accessories-img {
+		margin-left: -14rem;
+	}
+
+	/* 
+	===============================
 	Back to top Btn
 	===============================
 	*/
@@ -261,7 +292,7 @@ Responsive Breakpoint
 		min-height: 8rem;
 	}
 
-	
+
 	/* 
 	===============================
 	Hero Section Responsive
@@ -274,6 +305,15 @@ Responsive Breakpoint
 	.hero-content p.hero-desc {
 		font-size: 2.2rem;
 		padding-right: 14rem;
+	}
+
+	/* 
+	===============================
+	Kits Section Responsive
+	===============================
+	*/
+	.kits-img {
+		margin-left: -12.8rem;
 	}
 
 	/* 
@@ -307,6 +347,16 @@ Responsive Breakpoint
 
 	/* 
 	================================
+	Community Section Responsive
+	================================
+	*/
+
+	.community-btn {
+		margin-bottom: 6.5rem;
+	}
+
+	/* 
+	================================
 	Accessories Section Responsive
 	================================
 	*/
@@ -333,11 +383,11 @@ Responsive Breakpoint
 	===============================
 	*/
 	.kits-section {
-		/* padding-bottom: 10rem; */
+		padding-bottom: 10rem;
 	}
 
 	.kits-img {
-		margin-left: -15.8rem;
+		margin-left: -14.8rem;
 	}
 
 	/* 
@@ -431,6 +481,24 @@ Responsive Breakpoint
 	}
 
 	/* 
+	=========================================
+ 	Logo Bar Section Responsive
+	=========================================
+	*/
+	.logo-bar-slider-content {
+		margin: 0 20px;
+	}
+
+	/* 
+	=========================================
+ 	Kits Section Responsive
+	=========================================
+	*/
+	.kits-img {
+		margin-left: -12.8rem;
+	}
+
+	/* 
 	===============================
 	Coach Section Responsive
 	===============================
@@ -468,6 +536,24 @@ Responsive Breakpoint
 
 	.frx-content p {
 		margin-bottom: 4.5rem;
+	}
+
+	/* 
+	===============================
+	Community Section Responsive
+	===============================
+	*/
+	.community-overlay-title,
+	.community-overlay-desc {
+		padding: 1.5rem;
+	}
+
+	.community-overlay-title h3 {
+		font-size: 2.2rem;
+	}
+
+	.community-overlay-desc p {
+		font-size: 1.6rem;
 	}
 
 	/* 
@@ -529,6 +615,15 @@ Responsive Breakpoint
 	Hero Section Responsive
 	===============================
 	*/
+	.hero-content {
+		top: 60%;
+		transform: translateY(-60%);
+		-webkit-transform: translateY(-60%);
+		-moz-transform: translateY(-60%);
+		-ms-transform: translateY(-60%);
+		-o-transform: translateY(-60%);
+	}
+
 	.hero-content p.hero-desc {
 		font-size: 1.8rem;
 		padding-right: 10rem;
@@ -536,6 +631,15 @@ Responsive Breakpoint
 
 	.hero-content .hero-btn a {
 		padding: 1.5rem 4rem;
+	}
+
+	/* 
+	=========================================
+ 	Kits Section Responsive
+	=========================================
+	*/
+	.kits-img {
+		margin-left: -0.8rem;
 	}
 
 	/* 
@@ -552,9 +656,18 @@ Responsive Breakpoint
 		width: 10rem;
 	}
 
-}
+	/* 
+	================================
+	Accessories Section Responsive
+	================================
+	*/
+	.frx-img {
+		margin-left: -1rem;
+	}
 
-@media (max-width: 575px) {
+	.data-img {
+		margin-right: -7px;
+	}
 
 	/* 
 	===============================
@@ -565,6 +678,50 @@ Responsive Breakpoint
 		padding: 3.5rem 2rem;
 	}
 
+}
+
+@media (max-width: 530px) {
+
+	/* 
+	===============================
+	Community Section Responsive
+	===============================
+	*/
+	.community-overlay-title h3 {
+		font-size: 2rem;
+	}
+	
+	.community-overlay-desc h4 {
+		font-size: 1.7rem;
+	}
+
+	/* 
+	===============================
+	Field Section Responsive
+	===============================
+	*/
+	.slider-overlay-content {
+		width: 100%;
+		height: 100%;
+		position: static;
+		padding: 2rem;
+		opacity: 1;
+		visibility: visible;
+		display: none;
+	}
+
+	.field-slider-content:hover .slider-overlay-content {
+		display: block;
+	}
+
+	/* 
+	===============================
+	Footer Section Responsive
+	===============================
+	*/
+	.copyright-text :is(p, a, span){
+		font-size: 1.3rem;
+	}
 }
 
 @media (max-width: 511px) {
@@ -581,6 +738,27 @@ Responsive Breakpoint
 
 	.coach-content .coach-img img {
 		width: 8rem;
+	}
+
+}
+
+@media (max-width: 489px) {
+
+	/* 
+	===============================
+	Community Section Responsive
+	===============================
+	*/
+	.community-overlay-title h3 {
+		font-size: 1.8rem;
+	}
+	
+	.community-overlay-desc h4 {
+		font-size: 1.6rem;
+	}
+
+	.community-overlay-desc p {
+		font-size: 1.5rem;
 	}
 
 }
@@ -625,6 +803,38 @@ Responsive Breakpoint
 
 }
 
+@media (max-width: 447px) {
+
+	/* 
+	===============================
+	Community Section Responsive
+	===============================
+	*/
+	.community-row {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		    -ms-flex-direction: column !important;
+		        flex-direction: column !important;
+	}
+
+	.community-row > * {
+		width: 100% !important;
+	}
+	.community-row .community-content img {
+		width: 100%;
+	}
+
+	.community-overlay-title,
+	.community-overlay-desc {
+		padding: 2rem;
+	}
+
+	.community-overlay-title h3 {
+		font-size: 2rem;
+	}
+
+}
+
 @media (max-width: 430px) {
 
 	/* 
@@ -654,7 +864,7 @@ Responsive Breakpoint
 		padding: 0 1rem;
 		left: 0%;
 	}
-	
+
 	.hero-content p.hero-desc {
 		font-size: 1.6rem;
 		padding-right: 0rem;
@@ -673,7 +883,7 @@ Responsive Breakpoint
 		text-align: center;
 		font-size: 1.5rem;
 	}
-	
+
 }
 
 @media (max-width: 412px) {
@@ -693,7 +903,10 @@ Responsive Breakpoint
 	}
 
 	.widget-area {
-		flex-direction: column !important;
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		    -ms-flex-direction: column !important;
+		        flex-direction: column !important;
 	}
 
 	.widget-area>* {

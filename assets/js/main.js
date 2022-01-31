@@ -34,7 +34,7 @@ Version: 1.0.0
 
 	/* ===== Logo Bar Slider ===== */
 	$('.logo-bar-slider').slick({
-		slidesToShow: 3,
+		slidesToShow: 4,
 		infinite: true,
 		speed: 1500,
 		autoplay: true,
@@ -43,7 +43,13 @@ Version: 1.0.0
 		dots: false,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 2
 				}
@@ -133,8 +139,36 @@ Version: 1.0.0
 		responsive: [{
 				breakpoint: 1200,
 				settings: {
+					slidesToShow: 2,
+					centerPadding: '140px',
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
 					slidesToShow: 1,
 					centerPadding: '200px',
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '100px',
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '60px',
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '40px',
 				}
 			},
 		]
